@@ -24,16 +24,17 @@
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/bg-tab.jpg");
- }
- @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-  .hero{
-     background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7), 
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/bg-tab-2x.jpg");
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/bg-tab-2x.jpg");
+    }
   }
 }
 /* ----------------------------------TAB-------------------------- */
@@ -102,7 +103,7 @@
     letter-spacing: 0.04em;
   }
   .address-list:not(:last-child) {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
   .address-item {
     color: var(--primery-text-color);
@@ -113,6 +114,7 @@
     color: var(--accent-color-active);
   }
   .hero {
+    max-width: 768px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -120,16 +122,16 @@
       url("../images/people-office.jpg");
   }
   @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-  .hero{
-     background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7), 
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/people-office-2x.jpg");
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/people-office-2x.jpg");
+    }
   }
-}
   .hero-title {
     max-width: 496px;
     margin-bottom: 36px;
@@ -139,7 +141,6 @@
   }
   .advantages-list {
     column-gap: 24px;
-    row-gap: 72px;
   }
   .advantages-item {
     flex-basis: calc((100% - 24px) / 2);
@@ -148,7 +149,6 @@
     text-align: start;
   }
   .team-list {
-    row-gap: 64px;
     column-gap: 24px;
   }
   .footer-container {
@@ -194,8 +194,14 @@
 
 /* -----------------------------1200-------------------------------- */
 @media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .container {
-    width: 1160px;
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .logo {
     margin-right: 76px;
@@ -227,6 +233,7 @@
   }
 
   .hero {
+    max-width: 1158px;
     height: 600px;
     padding-top: 188px;
     padding-bottom: 188px;
@@ -265,15 +272,12 @@
     background-image: url(../images/astronaut.svg);
   }
   .work {
-    display: unset;
-  }
-  .team.section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    display: block;
+    padding: 0 0 120px 0;
   }
   .team > .container,
   .customers > .container {
-    width: 1160px;
+    width: 1158px;
   }
   .customers-list {
     flex-wrap: nowrap;
@@ -285,8 +289,11 @@
   .customers-item {
     flex-basis: calc((100% - 48px) / 3);
   }
+  .footer {
+    padding: 100px 0;
+  }
   .footer-container {
-    width: 1160px;
+    width: 1158px;
     display: flex;
     gap: 80px;
   }
