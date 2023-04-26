@@ -11,30 +11,9 @@
   .hero-title {
     font-size: 36px;
   }
-  .advantages-item {
-    flex-basis: 396px;
-  }
   .modal {
     width: 392px;
     height: 586px;
-  }
-  .hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/bg-tab.jpg");
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url("../images/bg-tab-2x.jpg");
-    }
   }
 }
 /* ----------------------------------TAB-------------------------- */
@@ -119,7 +98,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/people-office.jpg");
+      url("../images/bg-tab.jpg");
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -129,7 +108,7 @@
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url("../images/people-office-2x.jpg");
+        url("../images/bg-tab-2x.jpg");
     }
   }
   .hero-title {
@@ -190,6 +169,13 @@
   .customers-item {
     flex-basis: 168px;
   }
+  .filter {
+    margin-bottom: 64px;
+    justify-content: center;
+  }
+  .portfolio-list {
+    gap: 78px 24px;
+  }
 }
 
 /* -----------------------------1200-------------------------------- */
@@ -210,8 +196,7 @@
     display: flex;
   }
   .address-list {
-    display: block;
-    font-weight: 400;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
   }
@@ -233,7 +218,7 @@
   }
 
   .hero {
-    max-width: 1158px;
+    max-width: 1440px;
     height: 600px;
     padding-top: 188px;
     padding-bottom: 188px;
@@ -243,8 +228,24 @@
       ),
       url("../images/people-office.jpg");
   }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/people-office-2x.jpg");
+    }
+  }
   .hero-title {
     margin-bottom: 48px;
+  }
+  .advantages-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
   }
   .advantages-item {
     flex-basis: calc((100% - 72px) / 4);
@@ -310,5 +311,8 @@
   .modal {
     width: 408px;
     height: 584px;
+  }
+  .portfolio {
+    padding-top: 64px;
   }
 }
